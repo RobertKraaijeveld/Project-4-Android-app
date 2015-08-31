@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Day out</string>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <color name="darkerRed">#B61818</color>
+    <color name="darkGray">#808080</color>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="main_button_showResults">Toon resultaten</string>
+    <string name="negUitje">SAAI UITJE</string>
+    <string name="posUitje">LEUK UITJE!</string>
+
+    <string-array name="menu_items">
+        <item>Bekijk uitjes op kaart</item>
+        <item>Locatie wijzigen</item>
+        <item>Suggestie maken</item>
+        <item>Uitje beoordelen</item>
+        <item>Alle Uitjes</item>
+    </string-array>
+
+    <string-array name="Types">
+        <item>Geen</item>
+        <item>Pretpark</item>
+        <item>Restaurant</item>
+        <item>Museum</item>
+    </string-array>
+
+
+</resources>
+

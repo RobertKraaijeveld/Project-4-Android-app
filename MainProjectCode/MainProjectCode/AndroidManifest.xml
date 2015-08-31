@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.coldfushion.MainProjectApplication"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+    <uses-sdk android:minSdkVersion="17"/>
+    <application
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher">
+        <activity
+                android:name=".Activities.MyActivity"
+                android:label="Day out"
+                android:theme="@android:style/Theme.DeviceDefault.Light.DarkActionBar"
+                >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.ResultActivity" android:label="Uitjes lijst" />
+        <activity
+                android:name=".Activities.LocationChoose"
+                android:label="Locatie kiezen"/>
+        <activity
+                android:name=".Activities.MakeSuggestion"
+                android:label="Maak Suggestie"/>
+        <activity
+                android:name=".Activities.RateActivities"
+                android:label="Beoordeel uitjes"/>
+        <activity
+                android:name=".Activities.DetailUitje"
+                android:parentActivityName=".Activities.ResultActivity"
+                android:label="Uitje overzicht"/>
+        <activity
+                android:name=".Activities.RateUitjeItem"
+                android:label="Uitje beoordelen"
+                android:parentActivityName=".Activities.RateActivities"/>
+        <activity android:name=".Activities.SimpleLocationChoose" />
+        <activity android:name=".Activities.Results" android:label="Resultaten" android:parentActivityName=".Activities.MyActivity"/>
+
+
+        <meta-data
+                android:name="com.google.android.gms.version"
+                android:value="@integer/google_play_services_version" />
+
+
+        <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="AIzaSyDIRYJYGvZbvUCagYYmzIdkzh_-vhPsNCA"/>
+
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- The following two permissions are not required to use
+         Google Maps Android API v2, but are recommended. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature
+            android:glEsVersion="0x00020000"
+            android:required="true"/>
+</manifest>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:orientation="vertical"
+                                        android:id="@+id/drawer_layout">
+
+    <!-- Deze Lijst gaat items van type resultlistitem.xml bevatten. -->
+
+
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_SelectType"
+            android:entries="@array/Types"
+            />
+
+
+    <ListView
+            android:id="@android:id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+
+
+
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview_noUitjes"
+            android:visibility="invisible"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Ga terug"
+            android:onClick="GoBackButton_Resultlist"
+            android:id="@+id/ButtonIDGoback"
+            android:visibility="invisible"/>
+
+</LinearLayout>
